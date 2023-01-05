@@ -158,6 +158,27 @@ border: 1px dotted white;
 .footer-copyright {
 	text-align: center;
 }
+/*----------------post wrapper--------------------*/
+.post_wrapper {
+	background-color: #06266F;
+	padding: 1%;
+}
+
+/*---------------foto wrapper--------------------*/
+.foto_wrapper {
+display: flex;
+justify-content: space-around;
+}
+.foto_post {
+	padding: 0px;
+	width: 50%;
+	margin: 1%;
+	
+
+}
+
+/*---------------------media ------------------*/
+
 
   @media (max-width: 1024px) {
 /*.main-header-logo {
@@ -228,4 +249,20 @@ padding: 0px;
 	margin-right: auto;
 	text-align: center;
 }
+
+/*---------------foto wrapper--------------------*/
+.foto_wrapper {
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+}
+.foto_post {
+	padding: 0px;
+	width: 50%;
+	margin: 1%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
   }
