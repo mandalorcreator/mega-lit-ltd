@@ -10,7 +10,10 @@
 	--special: #663d15;
 }
 */
-
+mark {
+	background-color: #06266F;
+	color: white;
+}
 /*page grid*/
 .page {
 
@@ -161,7 +164,7 @@ border: 1px dotted white;
 /*----------------post wrapper--------------------*/
 .post_wrapper {
 	background-color: #06266F;
-	padding: 1%;
+	padding: 3%;
 }
 
 /*---------------foto wrapper--------------------*/
@@ -171,12 +174,16 @@ justify-content: space-around;
 }
 .foto_post {
 	padding: 0px;
-	width: 50%;
-	margin: 1%;
+	width:550px;
+	border: 3px solid white;
+	box-shadow: red;
+	
 	
 
 }
-
+.about_work{
+padding: 3%;
+}
 /*---------------------media ------------------*/
 
 
@@ -249,6 +256,9 @@ padding: 0px;
 	margin-right: auto;
 	text-align: center;
 }
+.welcome_wrapper{
+	font-size: 85%;
+}
 
 /*---------------foto wrapper--------------------*/
 .foto_wrapper {
@@ -258,11 +268,15 @@ flex-direction: column;
 }
 .foto_post {
 	padding: 0px;
-	width: 50%;
+	width:calc( 100% - 20px );
 	margin: 1%;
 	margin-left: auto;
 	margin-right: auto;
 
+}
+.h2_mobile_wrapper {
+	text-align: left;
+	margin-left: 3%;
 }
 
   }
