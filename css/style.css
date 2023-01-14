@@ -170,6 +170,7 @@ border: 1px dotted white;
 /*---------------foto wrapper--------------------*/
 .foto_wrapper {
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
 }
 .foto_post {
@@ -268,15 +269,27 @@ flex-direction: column;
 }
 .foto_post {
 	padding: 0px;
-	width:calc( 100% - 20px );
+	width:calc( 100% - 30px );
 	margin: 1%;
 	margin-left: auto;
 	margin-right: auto;
 
 }
 .h2_mobile_wrapper {
+	font-size: 24px;
 	text-align: left;
 	margin-left: 3%;
 }
+.h1_mobile_wrapper {
+	font-size: 24px;
 
+	text-align: left;
+	margin-left: 1%;
+	line-height: 30px	;
+}
+/*--------------NAVIATION--------------------*/
+.nav-link {
+	color: white;
+	font-size: +150%;
+}
   }
