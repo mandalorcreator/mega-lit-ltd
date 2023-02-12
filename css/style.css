@@ -117,13 +117,11 @@ margin-right: auto;
 
 /*GALLERY*/
 .gallery {
-border: 1px solid blue;
 }
 .foto_name_wrapper,
 .button_wrapper{
 display: flex;
 justify-content: space-around;
-border: 1px solid red;
 align-items: center;
 }
 .main-footer {
@@ -168,64 +166,48 @@ box-shadow: red;
 padding: 3%;
 }
 /*---------------------СлайдШОУ ------------------*/
-.slideshow-container {
-position: relative;
-margin: auto;
+.slider{
+	width: 300px;
+	overflow: hidden;
+	position: relative;
 }
-.prev, .next {
-	cursor: pointer;
+
+.slider__line{
+	display: flex;
+	transition: all 1s;
+}
+.slider__img{
+	width: 300px;
+	height: 250px;
+}
+.slider__btn-prev{
 	position: absolute;
+	left: 0px;
 	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
+	transform: translateY(-50%);
+	font-size: 30px;
+
+	color: rgba(255, 255, 255, 0.849);
+	/*background-color: transparent;*/
+	
+	line-height: 1;
 }
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;	
-}
-.prev:hover, next:hover{
-	background-color: rgba(0,0,0,0.8);
-}
-.text {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
+.slider__btn-next{
 	position: absolute;
-	top:0;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+
+	/*color: rgba(255, 255, 255, 0.849);
+	background-color: transparent;*/
+	
+	line-height: 1;
 }
-.dot{
-cursor: pointer;
-height: 13px;
-width: 13px;
-margin:0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+.slider__btn-prev:hover, .slider__btn-next:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.541);
 }
-.active, dot:hover{
-	background-color: #717171;
-}
-.fade{
-	-webkit-animation-name:fade;
-	-webkit-animation-duration:1.5s;
-	animation-name:fade;
-	animation-duration:1.5s;
-}
-@-webkit-keyframes fade{
-	from{opacity:.4}
-	to{opacity: 1}
-}
-@keyframes fade{
-	from{opacity:.4}
-	to{opacity: 1}
-} 
 /*---------------------media ------------------*/
 
 
