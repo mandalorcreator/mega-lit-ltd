@@ -184,13 +184,12 @@ padding: 3%;
 	position: absolute;
 	left: 0px;
 	top: 50%;
-	/*transform: translateY(-50%);
+	transform: translateY(-50%);
 	font-size: 30px;
-
-	color: rgba(255, 255, 255, 0.849);
-	background-color: transparent;*/
-	
 	line-height: 1;
+	border: none;
+	outline: none;
+
 }
 .slider__btn-next{
 	position: absolute;
@@ -198,15 +197,13 @@ padding: 3%;
 	top: 50%;
 	transform: translateY(-50%);
 	font-size: 30px;
-
-	/*color: rgba(255, 255, 255, 0.849);
-	background-color: transparent;*/
-	
 	line-height: 1;
+	border: none;
+	outline: none;
 }
 .slider__btn-prev:hover, .slider__btn-next:hover {
 	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.541);
+	background-color: rgba(16, 97, 189, 0.541);
 }
 /*---------------------media ------------------*/
 
