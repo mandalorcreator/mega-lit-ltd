@@ -1,33 +1,39 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+const slider = document.querySelector('.slider');
+const sliderImages = document.querySelectorAll('.slider__img');
+const sliderLine = document.querySelector('.slider__line');
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+const sliderBtnNext = document.querySelector('.slider__btn-next');
+const sliderBtnPrev = document.querySelector('.slider__btn-prev');
+
+let sliderCount = 0;
+let sliderWidth = slider.offsetWidth;
+
+
+// Перемотка слайдера вперед по нажатию на кнопку NEXT
+sliderBtnNext.addEventListener('click', nextSlide);
+
+// Перемотка слайдера назад по нажатию на кнопку PREV
+sliderBtnPrev.addEventListener('click', prevSlide);
+
+
+function nextSlide() {
+    sliderCount++;
+    
+    if (sliderCount >= sliderImages.length) {
+        sliderCount = 0;
+    }
+    rollSlider();
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function prevSlide() {
+    sliderCount--;
+    
+    if (sliderCount < 0) {
+        sliderCount = sliderImages.length -1;
+    }
+    rollSlider();
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    if (n >slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1){
-        slideIndex=slides.length
-    }
-    for (i=0; i <slides.length ; i++){
-        slides[i].sthyle.display= "none";
-
-    }
-    for (i=0; i < dots.length; i++){
-        dots[i].className= dots[i].className.replace("active","");
-        
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className+= "active";
+function rollSlider() {
+    sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
 }
